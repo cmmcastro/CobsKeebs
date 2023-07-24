@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+:root {
+    --primaryColor: #FFABCD;
+    --primaryColorLight: #FFC2DB;
+    --secondaryColor: #FDECB6;
+    --highlight: #C47CE0;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.name-logo-container {
+    display: flex;
+    gap: 10px;
+}
+
+.cobs-keebs h1 {
+    color: var(--primaryColor);
+    font-weight: 4000;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle p {
+    margin-top: -8px;
+    color: #000;
+    font-size: 10px;
+    font-family: "DM Sans";
+}

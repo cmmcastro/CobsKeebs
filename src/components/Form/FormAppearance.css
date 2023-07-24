@@ -1,0 +1,99 @@
+/* SignInForm.jsx */
+
+/* SignUpForm.jsx */
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+:root {
+    --primaryColor: #FFABCD;
+    --primaryColorLight: #FFC2DB;
+    --secondaryColor: #FDECB6;
+    --highlight: #C47CE0;
+}
+
+input{
+  width: 100%;
+  background: #FFF;
+  color: #000;
+  padding: 12px 20px;
+  margin: 40px auto;
+  border: 0;
+  border-radius: 20px;
+}
+
+input:focus{
+  color:#000;
+  outline: 0;
+}
+
+form p{
+	color: #FFF
+}
+
+form p a{
+	text-decoration: underline;
+	color: #FDECB6
+}
+
+.container{
+	width: 100%;
+	top: 100px;
+	position: absolute;
+  }
+
+.form-box{
+	position: relative;
+	width: 50%;
+	transform: translate(-50%);
+	top: 50px;
+	left: 50%;
+	text-align: center;
+	padding: 20px;
+}
+
+.form-box h1{
+	font-size: 50px;
+	margin-bottom: 80px;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.form-box h4{
+	font-size: 18px;
+	font-weight: normal;
+	font-family: 'DM Sans', sans-serif;
+	font-style: medium;
+	text-align: left;
+  	margin-bottom: -40px;
+}
+
+.button-field{
+	width: 100%;
+	align-items: center;
+	margin-top: 35px;
+	margin-bottom: 80px;
+}
+
+.button-field button{
+	flex-basis: 35%;
+	width: 125px;
+	background: #FFF;
+	color: #FFABCD;
+	height: 40px;
+	border-radius: 20px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: 'DM Sans', sans-serif;
+	font-style: medium;
+}
