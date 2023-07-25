@@ -3,8 +3,6 @@ import { useNavigate, Link, Navigate } from 'react-router-dom';
 import "./FormAppearance.css";
 
 /* firebase imports */
-/* import auth from "../../firebase";
-import database from "../../firebase"; */
 import { getDatabase, set, ref } from 'firebase/database'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import app from "../../firebase";

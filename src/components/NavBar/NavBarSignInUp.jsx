@@ -4,9 +4,11 @@ import SignIn from "../SignIn";
 import SignUp from "../SignUp";
 import Name from "../Name/Name";
 import "./NavBarSignInUp.css";
+import PrivateRoute from "../PrivateRoute";
 
 function NavBarSignInUp() {
     return (
+        <>
         <BrowserRouter>
             <header>
                 <nav>
@@ -21,6 +23,7 @@ function NavBarSignInUp() {
             </header>
                 <main>
                     <Routes>
+                        {/* <Route path="/" element={<PrivateRoute />} /> */}
                         <Route path="/" element={<Home />} />
                         <Route path="sign-in" element={<SignIn />} />
                         <Route path="sign-up" element={<SignUp />} />
@@ -28,6 +31,7 @@ function NavBarSignInUp() {
 
                 </main>
         </BrowserRouter>
+        </>
     );
 }
 

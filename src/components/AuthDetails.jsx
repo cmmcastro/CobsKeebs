@@ -8,7 +8,7 @@ const AuthDetails = () => {
     const [authUser, setAuthUser] = useState(null);
 
     useEffect(() => {
-        const lsiten = onAuthStateChanged(auth, (user) => {
+        const listen = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setAuthUser(user)
             } else{
@@ -16,9 +16,9 @@ const AuthDetails = () => {
             }
         })
 
-        /* return () => {
+        return () => {
             listen();
-        } */
+        }
     }, []);
 
     const userSignOut = () => {

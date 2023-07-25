@@ -19,12 +19,13 @@
 }
 
 input{
-  width: 100%;
+  width: 90%;
   background: #FFF;
   color: #000;
   padding: 12px 20px;
   margin: 40px auto;
   border: 0;
+  align-self: center;
   border-radius: 20px;
 }
 
@@ -46,25 +47,25 @@ form p a{
 	width: 100%;
 	top: 100px;
 	position: absolute;
-  }
+}
 
 .form-box{
 	position: relative;
-	width: 50%;
+	width: 400px;
 	transform: translate(-50%);
 	top: 50px;
 	left: 50%;
 	text-align: center;
-	padding: 20px;
 }
 
 .form-box h1{
-	font-size: 50px;
+	font-size: 60px;
 	margin-bottom: 80px;
 	position: relative;
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 400;
+	position: relative;
 }
 
 .form-box h4{
@@ -74,6 +75,7 @@ form p a{
 	font-style: medium;
 	text-align: left;
   	margin-bottom: -40px;
+	position: relative;
 }
 
 .button-field{

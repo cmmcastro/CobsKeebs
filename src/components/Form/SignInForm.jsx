@@ -1,24 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { useNavigate, Link, Navigate } from 'react-router-dom';
 import "./FormAppearance.css";
 
 /* firebase imports */
-import auth from "../../firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import app from "../../firebase";
+
+const auth = getAuth(app);
 
 function SignInForm() {
+const navigate = useNavigate();
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const [errorMessage, setErrorMessage] = useState('');
 
     const signIn = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-            console.log(userCredential);
+            //const user = userCredential.user;
+            navigate("/");
+            console.log("Logged in!");
         })
         .catch((error) => {
-            console.log(error);
+            setErrorMessage('Invalid username or password!');
+            //console.log(error);
         })
     }
+
+/*     if (sessionInfo.loggedIn) {
+        navigate("/");
+    } */
 
     return (
         <div className="form-container">

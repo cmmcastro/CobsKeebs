@@ -1,14 +1,38 @@
 import NavBarSignInUp from "./NavBar/NavBarSignInUp";
+import NavBarHome from "./NavBar/NavBarHome";
+import "../App.css";
+
+/* bootstrap icons imports */
+import { IconContext } from "react-icons";
+import { BsFillPersonFill, BsFillCartFill } from "react-icons/bs";
 
 function Home() {
     return (
         <>
-            <div className="container">
-                <h1>Cobs Keebs</h1>
-                <p>Cobs keebs is a beginner friendly keyboard modding service. Here at Cobs Keebs we offer competitive pricing but not at 
-                    the expense of poor-quality work. We treat the boards of others like how I treat my own. We also offer help to beginners 
-                    new to mechanical keyboards. Feel free to message us for help choosing parts to find and build the perfect keyboard for you 
-                    on any budget</p>
+            <div className="home-container">
+                <div className="cart-profile-icons">
+                    <IconContext.Provider value={{ size: '35px' }}>
+                        <BsFillCartFill />
+                        <BsFillPersonFill />
+                    </IconContext.Provider>
+                </div>
+                <div className="potato">
+                        <div className="home-container-contents">
+                            <div className="home-container-contents-images">
+                            <div className="Lubing"><img src="Lubing.jpg" alt="Lubing" width="350" height="350"></img></div>
+                            <div className="Case-Foam"><img src="Case Foam.jpg" alt="Case Foam" width="350" height="350"></img></div>
+                                
+                                
+                            <div className="Stabilizer Tuning"><img src="Stabilizer Tuning.jpg" alt="Stabilizer Tuning" width="350" height="350"></img></div>
+                            <div className="Tape Mod"><img src="Tape Mod.jpg" alt="Tape Mod" width="350" height="350"></img></div>
+                                
+                                
+                            <div className="PE-Foam"><img src="pe foam.jpg" alt="PE Foam" width="350" height="350"></img></div>
+                            <div className="Films"><img src="films.jpg" alt="Films" width="350" height="350"></img></div>
+                                
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
