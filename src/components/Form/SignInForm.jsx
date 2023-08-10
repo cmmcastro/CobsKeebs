@@ -25,14 +25,10 @@ const navigate = useNavigate();
             console.log("Logged in!");
         })
         .catch((error) => {
-            setErrorMessage('Invalid username or password!');
-            //console.log(error);
+            setErrorMessage('Invalid email or password!');
+            console.log(error);
         })
     }
-
-/*     if (sessionInfo.loggedIn) {
-        navigate("/");
-    } */
 
     return (
         <div className="form-container">
